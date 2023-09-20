@@ -1,5 +1,5 @@
 <script>
-// import MyComponent from "./components/MyComponent.vue";
+import AppMain from "./components/AppMain.vue";
 
 export default {
   data() {
@@ -8,15 +8,15 @@ export default {
     };
   },
 
-  // components: {
-  //   MyComponent,
-  // },
+  components: {
+    AppMain,
+  },
 };
 </script>
 
 <template>
+  <AppMain />
   <h1>{{ title }}</h1>
-  <!-- <font-awesome-icon icon="fa-solid fa-cart-shopping" /> -->
 </template>
 
 <style lang="scss">
