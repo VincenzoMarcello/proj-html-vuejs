@@ -1,0 +1,14 @@
+// # importiamo il file che contiene i mixins
+@use "./partials/mixins" as *;
+
+// # importiamo il file che contiene le variables
+@use "./partials/variables" as *;
+
+// # importiamo il font
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+
+body {
+  h1 {
+    font-family: "Abril Fatface", cursive;
+  }
+}
