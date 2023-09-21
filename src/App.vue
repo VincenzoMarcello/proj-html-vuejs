@@ -16,7 +16,6 @@ export default {
 
 <template>
   <AppMain />
-  <h1>{{ title }}</h1>
 </template>
 
 <style lang="scss">

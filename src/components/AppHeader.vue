@@ -1,19 +1,12 @@
 <script>
-// import dLinks from "../data/index.js";
+import { dLinks } from "../data/index";
+
 import Button from "./UtilityComponent/Button.vue";
 
 export default {
   data() {
     return {
-      dLinks: [
-        "Home",
-        "About Us",
-        "Services",
-        "Shop",
-        "Our Team",
-        "Blog",
-        "Contact Us",
-      ],
+      dLinks,
     };
   },
 

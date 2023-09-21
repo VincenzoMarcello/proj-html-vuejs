@@ -10,7 +10,8 @@
 body {
   color: grey;
   h1,
-  h2 {
+  h2,
+  h3 {
     font-family: $font-primary;
   }
 
@@ -21,6 +22,11 @@ body {
 
   h2 {
     font-size: 5rem;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+    color: $color-button;
   }
 
   h4 {
@@ -43,6 +49,27 @@ body {
   .services-section {
     background-image: url("/img/avadabarbers-about-introbackground.jpg");
     background-size: cover;
+  }
+
+  .product-section {
+    background-image: url("/img/avadabarbers-reviewsbackground.jpg");
     height: 100vh;
+    background-size: cover;
+  }
+
+  .blog-section {
+    background-color: $bg-color-blog-section;
+
+    h3 {
+      font-size: 2rem;
+    }
+    .img-services {
+      width: 70%;
+    }
+  }
+
+  .bg-footer {
+    background-color: $bg-color-footer;
+    height: 50vh;
   }
 }
