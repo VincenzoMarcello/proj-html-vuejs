@@ -1,11 +1,12 @@
 <script>
-import { dLinks, headerBtnText } from "../data/index";
+import { headerTitles, dLinks, headerBtnText } from "../data/index";
 
 import Button from "./UtilityComponent/Button.vue";
 
 export default {
   data() {
     return {
+      headerTitles,
       dLinks,
       headerBtnText,
     };
@@ -52,8 +53,8 @@ export default {
       <div class="d-flex align-items-center">
         <div class="col-6">
           <div>
-            <h1>Barber Shop</h1>
-            <p class="pt-4">The Pinnacle of Male Grooming</p>
+            <h1>{{ headerTitles.title }}</h1>
+            <p class="pt-4">{{ headerTitles.titleSecondary }}</p>
             <Button :text="headerBtnText" />
           </div>
         </div>

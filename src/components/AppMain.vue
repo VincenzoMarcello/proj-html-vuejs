@@ -100,8 +100,8 @@ export default {
   </section>
 
   <!-- SECTION PRODUCTS -->
+  <img src="\img\triangle-black.jpg" class="w-100" alt="" />
   <section class="product-section">
-    <img src="\img\triangle-black.jpg" class="w-100" alt="" />
     <AppTitle
       class="py-4"
       :intro="productsTitles.introText"
@@ -127,7 +127,11 @@ export default {
     <div class="container border-container">
       <div class="row">
         <div class="col-4 shaving-pic">
-          <img src="\img\shaving_butter-400x400.png" alt="" />
+          <img
+            src="\img\shaving_butter-400x400.png"
+            class="butter-pic"
+            alt=""
+          />
         </div>
         <div class="col-8 container-text">
           <h5>{{ shavingTitles.introText }}</h5>
@@ -202,6 +206,11 @@ export default {
   height: 100%;
   background-image: url("/img/avadabarbers-cta-background.jpg");
   background-size: cover;
+}
+.butter-pic:hover {
+  transform: scale(1.1);
+  transition: 1s;
+  cursor: pointer;
 }
 .container-text {
   display: flex;

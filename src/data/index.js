@@ -1,4 +1,11 @@
 // # HEADER
+// ? TITLES
+const headerTitles = {
+  title: "Barber Shop",
+  titleSecondary: "The Pinnacle of Male Grooming",
+};
+
+// ? BUTTON
 const headerBtnText = "LEARN MORE";
 
 // ? DROPDOWN LINKS
@@ -69,25 +76,25 @@ const productsTitles = {
 const products = [
   {
     id: "1",
-    pic: "/img/brush_dark-200x200.png",
+    pic: "/img/brush_dark-600x600.png",
     title: "Brush",
     price: "$15.00",
   },
   {
     id: "2",
-    pic: "/img/scissors-200x200.png",
+    pic: "/img/scissors-600x600.png",
     title: "Scissors",
     price: "$85.00",
   },
   {
     id: "3",
-    pic: "/img/hot_oil_dark-200x200.png",
+    pic: "/img/hot_oil_dark-600x600.png",
     title: "Hot Oil",
     price: "$15.00",
   },
   {
     id: "4",
-    pic: "/img/straight_razor_dark-200x200.png",
+    pic: "/img/straight_razor_dark-600x600.png",
     title: "Straight Razor",
     price: "$30.00",
   },
@@ -153,21 +160,21 @@ const blogTitles = {
 const blogPosts = [
   {
     id: "1",
-    pic: "/img/first-320x202.jpg",
+    pic: "/img/first-700x441.jpg",
     title: "Avada Barbers Now Open",
     description:
       "Avada Barbers are exepert in the lickety split trim and hair cut. Quick but careful and ridiculously good looking.",
   },
   {
     id: "2",
-    pic: "/img/second-320x202.jpg",
+    pic: "/img/second-700x441.jpg",
     title: "Choosing The Right Barber",
     description:
       "Avada Barbers are exepert in the lickety split trim and hair cut. Quick but careful and ridiculously good looking.",
   },
   {
     id: "3",
-    pic: "/img/third-320x202.jpg",
+    pic: "/img/third-700x441.jpg",
     title: "Quick service Guide",
     description:
       "Avada Barbers are exepert in the lickety split trim and hair cut. Quick but careful and ridiculously good looking.",
@@ -194,6 +201,7 @@ const links = [
 const footerBtnRightText = "BOOK YOUR APPOINTMENT";
 
 export {
+  headerTitles,
   headerBtnText,
   dLinks,
   servTitlesTop,

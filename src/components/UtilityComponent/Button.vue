@@ -26,6 +26,7 @@ export default {
   color: rgb(248, 247, 202);
   border-color: rgb(75, 75, 75);
   background-color: rgba(212, 204, 204, 0.54);
-  transition: 0.5s;
+  transform: scale(1.1);
+  transition: 1s;
 }
 </style>

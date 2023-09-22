@@ -1,6 +1,4 @@
 <script>
-// import MyComponent from "./components/MyComponent.vue";
-
 export default {
   props: {
     img: String,
@@ -11,7 +9,7 @@ export default {
 </script>
 
 <template>
-  <div class="col-4 px-5 text-center">
+  <div class="col-4 px-4 text-center">
     <div class="container-pic">
       <img :src="img" class="img-services py-5" alt="" />
     </div>
@@ -26,9 +24,15 @@ export default {
 
 <style lang="scss" scoped>
 .container-pic {
-  height: 200px;
+  min-height: 250px;
 }
 .img-services {
-  width: 20%;
+  width: 25%;
+}
+
+.img-services:hover {
+  transform: scale(1.1);
+  transition: 1s;
+  cursor: pointer;
 }
 </style>

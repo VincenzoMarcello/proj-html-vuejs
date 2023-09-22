@@ -1,6 +1,4 @@
 <script>
-// import MyComponent from "./components/MyComponent.vue";
-
 export default {
   props: {
     text: String,
@@ -28,6 +26,12 @@ export default {
   border-radius: 50%;
   overflow: hidden;
   padding: 2rem 0;
+}
+
+.pic-circle:hover {
+  transform: scale(1.2);
+  transition: 1s;
+  cursor: pointer;
 }
 
 h6 {

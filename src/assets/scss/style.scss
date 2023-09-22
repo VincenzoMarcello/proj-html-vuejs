@@ -59,7 +59,7 @@ body {
 
   .product-section {
     background-image: url("/img/avadabarbers-reviewsbackground.jpg");
-    height: 100vh;
+    padding: 7rem 0;
     background-size: cover;
   }
 
@@ -70,13 +70,16 @@ body {
       font-size: 2rem;
     }
     .img-services {
-      width: 70%;
+      width: 100%;
     }
   }
 
   footer {
     .main-button {
       transform: scale(0.8);
+    }
+    .main-button:hover {
+      transform: scale(0.5);
     }
   }
 
