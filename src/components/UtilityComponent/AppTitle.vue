@@ -2,22 +2,17 @@
 // import MyComponent from "./components/MyComponent.vue";
 
 export default {
-  data() {
-    return {
-      title: "Hello world",
-    };
+  props: {
+    intro: String,
+    title: String,
   },
-
-  // components: {
-  //   MyComponent,
-  // },
 };
 </script>
 
 <template>
   <div class="text-center">
-    <h5>AWARD WINNING</h5>
-    <h2>Pro Barbers</h2>
+    <h5>{{ intro }}</h5>
+    <h2>{{ title }}</h2>
   </div>
 </template>
 

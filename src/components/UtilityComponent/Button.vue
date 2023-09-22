@@ -2,21 +2,15 @@
 // import MyComponent from "./components/MyComponent.vue";
 
 export default {
-  data() {
-    return {
-      title: "Hello world",
-    };
+  props: {
+    text: String,
   },
-
-  // components: {
-  //   MyComponent,
-  // },
 };
 </script>
 
 <template>
   <button class="main-button mt-4" href="#">
-    <h4>MEET YOUR NEW BARBER</h4>
+    <h4>{{ text }}</h4>
   </button>
 </template>
 
@@ -26,5 +20,12 @@ export default {
   background-color: transparent;
   border: 2px solid $color-button;
   padding: 1rem 2rem;
+}
+
+.main-button:hover {
+  color: rgb(248, 247, 202);
+  border-color: rgb(75, 75, 75);
+  background-color: rgba(212, 204, 204, 0.54);
+  transition: 0.5s;
 }
 </style>

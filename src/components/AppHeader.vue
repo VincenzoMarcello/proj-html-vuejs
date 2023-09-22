@@ -1,5 +1,5 @@
 <script>
-import { dLinks } from "../data/index";
+import { dLinks, headerBtnText } from "../data/index";
 
 import Button from "./UtilityComponent/Button.vue";
 
@@ -7,6 +7,7 @@ export default {
   data() {
     return {
       dLinks,
+      headerBtnText,
     };
   },
 
@@ -53,7 +54,7 @@ export default {
           <div>
             <h1>Barber Shop</h1>
             <p class="pt-4">The Pinnacle of Male Grooming</p>
-            <Button />
+            <Button :text="headerBtnText" />
           </div>
         </div>
         <div class="col-6 text-center py-5">

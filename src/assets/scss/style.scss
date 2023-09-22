@@ -8,7 +8,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 
 body {
-  color: grey;
   h1,
   h2,
   h3 {
@@ -22,6 +21,7 @@ body {
 
   h2 {
     font-size: 5rem;
+    color: $color-secondary-title;
   }
 
   h3 {
@@ -41,9 +41,15 @@ body {
     color: $color-button;
   }
 
+  p {
+    color: $color-text-small;
+    font-size: 1.2rem;
+  }
+
   header p {
     font-size: 1.5rem;
     font-weight: 100;
+    color: $color-secondary-title;
   }
 
   .services-section {
@@ -68,8 +74,13 @@ body {
     }
   }
 
+  footer {
+    .main-button {
+      transform: scale(0.8);
+    }
+  }
+
   .bg-footer {
     background-color: $bg-color-footer;
-    height: 50vh;
   }
 }

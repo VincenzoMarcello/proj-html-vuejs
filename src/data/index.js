@@ -1,5 +1,7 @@
 // # HEADER
-// # DROPDOWN LINKS
+const headerBtnText = "LEARN MORE";
+
+// ? DROPDOWN LINKS
 const dLinks = [
   "Home",
   "About Us",
@@ -11,6 +13,23 @@ const dLinks = [
 ];
 
 // # SERVICES SECTION
+
+// ? TITLES TOP
+const servTitlesTop = {
+  introText: "AWARD WINNING",
+  title: "Pro Barbers",
+};
+
+// ? BUTTON TOP
+const servTopBtnText = "MEET YOUR NEW BARBER";
+
+// ? TITLES BOTTOM
+const servTitlesBottom = {
+  introText: "MENS GROOMING",
+  title: "Services",
+};
+
+// ? CARDS
 const services = [
   {
     id: "1",
@@ -35,7 +54,18 @@ const services = [
   },
 ];
 
+// ? BUTTON BOTTOM
+const servBottomBtnText = "READ ABOUT OUR SERVICES";
+
 // # PRODUCTS SECTION
+
+// ? TITLES
+const productsTitles = {
+  introText: "WE HAVE YOU COVERED",
+  title: "Avada Grooming Products",
+};
+
+// ? CARDS
 const products = [
   {
     id: "1",
@@ -63,7 +93,33 @@ const products = [
   },
 ];
 
+// ? BUTTON
+const productsBtnText = "SHOP YOUR PRODUCT RANGE";
+
+// # SHAVING SECTION
+
+// ? TITLES
+const shavingTitles = {
+  introText: "THIS MONTHS FEATURED PRODUCT",
+  title: "Shaving Butter",
+  description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+  ratione eum sapiente est, quaerat quis, porro ullam atque magni
+  animi molestias quisquam inventore molestiae voluptatibus et
+  laborum, aut nobis impedit.`,
+};
+
+// ? BUTTON
+const shavingBtnText = "BUY NOW";
+
 // # REVIEWS SECTION
+
+// ? TITLES
+const reviewTitles = {
+  introText: "WHAT PEOPLE SAY",
+  title: "Reviews",
+};
+
+// ? CARDS
 const reviews = [
   {
     id: "1",
@@ -86,6 +142,14 @@ const reviews = [
 ];
 
 // # BLOG SECTION
+
+// ? TITLES
+const blogTitles = {
+  introText: "TALES FROM THE BARBER SHOP",
+  title: "Recent Blog Posts",
+};
+
+// ? CARDS
 const blogPosts = [
   {
     id: "1",
@@ -110,7 +174,14 @@ const blogPosts = [
   },
 ];
 
-// # FOOTER ELEMENTS
+// ? BUTTON
+const blogBtnText = "READ MORE FROM OUR BLOG";
+
+// # FOOTER LINKS
+// ? BUTTON TOP
+const footerBtnLeftText = "SHOP OUR RANGE NOW";
+
+// ? CARDS
 const links = [
   "Avada Barbers",
   "123 New York Street",
@@ -119,4 +190,28 @@ const links = [
   "+1(555) 555-1212",
 ];
 
-export { dLinks, services, products, reviews, blogPosts, links };
+// ? BUTTON BOTTOM
+const footerBtnRightText = "BOOK YOUR APPOINTMENT";
+
+export {
+  headerBtnText,
+  dLinks,
+  servTitlesTop,
+  servTopBtnText,
+  servTitlesBottom,
+  services,
+  servBottomBtnText,
+  productsTitles,
+  products,
+  productsBtnText,
+  shavingTitles,
+  shavingBtnText,
+  reviewTitles,
+  reviews,
+  blogTitles,
+  blogPosts,
+  blogBtnText,
+  footerBtnLeftText,
+  links,
+  footerBtnRightText,
+};

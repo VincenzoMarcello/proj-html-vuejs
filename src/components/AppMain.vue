@@ -1,6 +1,22 @@
 <script>
 // INDEX.JS
-import { services, products, reviews, blogPosts } from "../data/index";
+import {
+  servTitlesTop,
+  servTopBtnText,
+  servTitlesBottom,
+  services,
+  servBottomBtnText,
+  productsTitles,
+  products,
+  productsBtnText,
+  shavingTitles,
+  shavingBtnText,
+  reviewTitles,
+  reviews,
+  blogTitles,
+  blogPosts,
+  blogBtnText,
+} from "../data/index";
 
 // COMPONENTS
 import AppHeader from "./AppHeader.vue";
@@ -14,11 +30,21 @@ import AppFooter from "./AppFooter.vue";
 export default {
   data() {
     return {
-      title: "Hello world",
+      servTitlesTop,
+      servTopBtnText,
+      servTitlesBottom,
       services,
+      servBottomBtnText,
+      productsTitles,
       products,
+      productsBtnText,
+      shavingTitles,
+      shavingBtnText,
+      reviewTitles,
       reviews,
+      blogTitles,
       blogPosts,
+      blogBtnText,
     };
   },
 
@@ -42,13 +68,21 @@ export default {
   <section class="services-section">
     <div class="container">
       <div class="py-5 text-center">
-        <AppTitle />
-        <Button />
+        <AppTitle
+          :intro="servTitlesTop.introText"
+          :title="servTitlesTop.title"
+        />
+        <Button :text="servTopBtnText" />
       </div>
     </div>
+    <img src="\img\triangle-white.jpg" class="w-100" alt="" />
     <div class="bg-white">
       <div class="container">
-        <AppTitle class="py-4" />
+        <AppTitle
+          class="py-4"
+          :intro="servTitlesBottom.introText"
+          :title="servTitlesBottom.title"
+        />
         <div class="d-flex">
           <card
             v-for="service in services"
@@ -59,7 +93,7 @@ export default {
           />
         </div>
         <div class="text-center pb-5">
-          <Button />
+          <Button :text="servBottomBtnText" />
         </div>
       </div>
     </div>
@@ -67,7 +101,12 @@ export default {
 
   <!-- SECTION PRODUCTS -->
   <section class="product-section">
-    <AppTitle class="py-4" />
+    <img src="\img\triangle-black.jpg" class="w-100" alt="" />
+    <AppTitle
+      class="py-4"
+      :intro="productsTitles.introText"
+      :title="productsTitles.title"
+    />
     <div class="d-flex">
       <CardProducts
         v-for="product in products"
@@ -79,9 +118,10 @@ export default {
     </div>
 
     <div class="text-center pt-5">
-      <Button />
+      <Button :text="productsBtnText" />
     </div>
   </section>
+
   <!-- SECTION SHAVING -->
   <section>
     <div class="container border-container">
@@ -90,15 +130,12 @@ export default {
           <img src="\img\shaving_butter-400x400.png" alt="" />
         </div>
         <div class="col-8 container-text">
-          <h5>AWARD WINNING</h5>
-          <h2>Pro Barbers</h2>
+          <h5>{{ shavingTitles.introText }}</h5>
+          <h2>{{ shavingTitles.title }}</h2>
           <p class="text-shaving">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-            ratione eum sapiente est, quaerat quis, porro ullam atque magni
-            animi molestias quisquam inventore molestiae voluptatibus et
-            laborum, aut nobis impedit.
+            {{ shavingTitles.description }}
           </p>
-          <Button />
+          <Button :text="shavingBtnText" />
         </div>
       </div>
     </div>
@@ -107,7 +144,11 @@ export default {
   <!-- SECTION REVIEWS -->
   <section>
     <div class="container">
-      <AppTitle class="py-4" />
+      <AppTitle
+        class="py-4"
+        :intro="reviewTitles.introText"
+        :title="reviewTitles.title"
+      />
       <div class="d-flex">
         <CardReviews
           v-for="review in reviews"
@@ -118,11 +159,16 @@ export default {
         />
       </div>
     </div>
+    <img src="\img\triangle-grey.PNG" class="w-100 pt-5" alt="" />
   </section>
 
   <!-- SECTION BLOG -->
   <section class="blog-section">
-    <AppTitle class="py-4" />
+    <AppTitle
+      class="py-4"
+      :intro="blogTitles.introText"
+      :title="blogTitles.title"
+    />
     <div class="container">
       <div class="d-flex">
         <card
@@ -134,7 +180,7 @@ export default {
         />
       </div>
       <div class="text-center pb-5">
-        <Button />
+        <Button :text="blogBtnText" />
       </div>
     </div>
   </section>
@@ -144,6 +190,7 @@ export default {
 
 <style lang="scss" scoped>
 @use "../assets/scss/partials/variables" as *;
+
 .container {
   min-height: 400px;
 }

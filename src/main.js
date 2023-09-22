@@ -9,17 +9,19 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faCopyright } from "@fortawesome/free-regular-svg-icons";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
-import { faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { faFacebookF } from "@fortawesome/free-brands-svg-icons";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 library.add(
   faCartShopping,
   faBars,
   faTwitter,
-  faFacebook,
+  faFacebookF,
   faYoutube,
-  faInstagram
+  faInstagram,
+  faCopyright
 );
 
 import { createApp } from "vue";
